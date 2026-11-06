@@ -6,6 +6,14 @@
   <title>Silversound Archive 🎙️ — All the Songs</title>
   <meta name="description" content="Archive of Silversound Telegram channel: Jekyll & Hyde, EPIC: The Musical, Supernatural, Helluva Boss and more.">
   <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.0/examples/jsm/"
+    }
+  }
+  </script>
 </head>
 <body>
   <div id="stars"></div>
@@ -24,6 +32,7 @@
       <h1>All the Songs</h1>
       <p class="tagline">72 posts from the channel — 59 songs, photos and videos. Tap any song to open its post on Telegram and listen.</p>
     </section>
+    <div class="stage"><canvas id="scene" style="height:220px" aria-label="Spinning silver vinyl in 3D"></canvas></div>
     <section class="card">
 <h2>Jekyll &amp; Hyde — Anthony Warlow</h2>
 <ul class="songs">
@@ -121,5 +130,6 @@ Helluva boss</a> <span class="muted">4:35</span></li>
     <p>Silversound 🎙️ — Made with love by Artiman and Marley 🪽</p>
   </footer>
   <script src="script.js"></script>
+  <script type="module" src="three-scene.js"></script>
 </body>
 </html>
