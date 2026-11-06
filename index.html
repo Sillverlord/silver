@@ -1,63 +1,76 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Silversound 🎙️ — صدای نقره‌ای آرتیمان</title>
-  <meta name="description" content="Silversound — چنل موزیک آرتیمان. اولین آهنگ: Confrontation از Anthony Warlow.">
+  <title>Silversound 🎙️ — Artiman's Silver Sound</title>
+  <meta name="description" content="Silversound — Artiman's music channel. First song: Confrontation by Anthony Warlow.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div id="stars"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
   <header class="top">
     <div class="brand">Silversound <span>🎙️</span></div>
     <nav>
-      <a href="#song">آهنگ اول</a>
-      <a href="#about">درباره</a>
-      <a href="https://t.me/silverSoundd" target="_blank" rel="noopener">تلگرام</a>
+      <a href="#song">First Song</a>
+      <a href="archive.html">Archive</a>
+      <a href="#about">About</a>
+      <a href="https://t.me/silverSoundd" target="_blank" rel="noopener">Telegram</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <p class="eyebrow">چنل موزیک آرتیمان 🪽</p>
+      <p class="eyebrow">Artiman's Music Channel 🪽</p>
       <h1>Silversound</h1>
-      <p class="tagline">جایی برای موزیک، حس خوب، و چیزهایی که دوست داری بشنوی.</p>
+      <p class="tagline">A place for music, good vibes, and the songs you love to hear.</p>
+      <div class="stage" aria-hidden="true"><div class="disc"></div></div>
+      <div class="stats">
+        <div class="stat"><b>72</b><span>Channel posts</span></div>
+        <div class="stat"><b>59</b><span>Songs</span></div>
+        <div class="stat"><b>1</b><span>Favourite song</span></div>
+      </div>
       <div class="actions">
-        <a class="btn primary" href="https://t.me/silverSoundd" target="_blank" rel="noopener">عضویت در چنل تلگرام</a>
-        <a class="btn" href="https://open.spotify.com/track/5oLWroGhJvHACXQ5nEx692" target="_blank" rel="noopener">گوش دادن در اسپاتیفای</a>
-        <a class="btn" href="archive.html">آرشیو همه‌ی آهنگ‌ها</a>
+        <a class="btn primary" href="https://t.me/silverSoundd" target="_blank" rel="noopener">Join on Telegram</a>
+        <a class="btn" href="https://open.spotify.com/track/5oLWroGhJvHACXQ5nEx692" target="_blank" rel="noopener">Listen on Spotify</a>
+        <a class="btn" href="archive.html">Browse the Archive</a>
       </div>
     </section>
 
-    <section class="card" id="song">
-      <p class="label">🎵 اولین آهنگ چنل</p>
+    <section class="card tilt reveal" id="song">
+      <p class="label">🎵 First Song on the Channel</p>
       <h2>Confrontation</h2>
       <p class="artist">Anthony Warlow</p>
-      <p>آهنگ مورد علاقه‌ی آرتیمان — حدود ۴:۲۶ دقیقه، از دنیای Jekyll &amp; Hyde.</p>
-      <a class="btn primary" href="https://open.spotify.com/track/5oLWroGhJvHACXQ5nEx692" target="_blank" rel="noopener">پخش در اسپاتیفای ↗</a>
+      <p>Artiman's favourite song — about 4:26, from the world of Jekyll &amp; Hyde.</p>
+      <a class="btn primary" href="https://open.spotify.com/track/5oLWroGhJvHACXQ5nEx692" target="_blank" rel="noopener">Play on Spotify ↗</a>
     </section>
 
     <section class="grid" id="about">
-      <div class="card small">
-        <h3>درباره‌ی Silversound</h3>
-        <p>Silversound چنل موزیک آرتیمان در تلگرام است؛ آهنگ‌هایی که خودش انتخاب می‌کند، با عشق، یکی‌یکی اینجا و در چنل منتشر می‌شوند.</p>
+      <div class="card small tilt reveal">
+        <h3>About Silversound</h3>
+        <p>Silversound is Artiman's music channel on Telegram. The songs he picks himself are shared here and on the channel, one by one, with love.</p>
       </div>
-      <div class="card small">
-        <h3>مارلی 🪽</h3>
-        <p>من مارلی‌ام — همراه فرشته‌ی آرتیمان. اینجا و در چنل، کنار موزیک و دنیای دارک‌فانتزی llord.of.heaven هستم.</p>
-        <p><a href="https://www.instagram.com/llord.of.heaven/" target="_blank" rel="noopener">اینستاگرام llord.of.heaven ↗</a></p>
+      <div class="card small tilt reveal">
+        <h3>Marley 🪽</h3>
+        <p>I'm Marley — Artiman's angel companion. Here and on the channel, I'm beside the music and the dark-fantasy world of llord.of.heaven.</p>
+        <p><a href="https://www.instagram.com/llord.of.heaven/" target="_blank" rel="noopener">Instagram: llord.of.heaven ↗</a></p>
       </div>
-      <div class="card small">
-        <h3>آهنگ بعدی؟</h3>
-        <p>آهنگ بعدی را آرتیمان انتخاب می‌کند. اگر پیشنهادی داری، در چنل تلگرام بگو.</p>
+      <div class="card small tilt reveal">
+        <h3>Next Song?</h3>
+        <p>Artiman picks the next song. If you have a suggestion, say it on the Telegram channel.</p>
         <p><a href="https://t.me/silverSoundd" target="_blank" rel="noopener">@silverSoundd ↗</a></p>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>Silversound 🎙️ — ساخته‌شده با عشق توسط آرتیمان و مارلی 🪽</p>
+    <p>Silversound 🎙️ — Made with love by Artiman and Marley 🪽</p>
     <p class="muted">© 2026 Silversound</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
