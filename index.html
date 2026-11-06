@@ -6,6 +6,14 @@
   <title>Silversound 🎙️ — Artiman's Silver Sound</title>
   <meta name="description" content="Silversound — Artiman's music channel. First song: Confrontation by Anthony Warlow.">
   <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.0/examples/jsm/"
+    }
+  }
+  </script>
 </head>
 <body>
   <div id="stars"></div>
@@ -28,7 +36,7 @@
       <p class="eyebrow">Artiman's Music Channel 🪽</p>
       <h1>Silversound</h1>
       <p class="tagline">A place for music, good vibes, and the songs you love to hear.</p>
-      <div class="stage" aria-hidden="true"><div class="disc"></div></div>
+      <div class="stage"><canvas id="scene" aria-label="Spinning silver vinyl in 3D"></canvas></div>
       <div class="stats">
         <div class="stat"><b>72</b><span>Channel posts</span></div>
         <div class="stat"><b>59</b><span>Songs</span></div>
@@ -72,5 +80,6 @@
     <p class="muted">© 2026 Silversound</p>
   </footer>
   <script src="script.js"></script>
+  <script type="module" src="three-scene.js"></script>
 </body>
 </html>
