@@ -2,7 +2,7 @@
 
 Website for Artiman's Telegram music channel **Silversound** (@silverSoundd).
 
-Live on GitHub Pages: https://artimaniravani-cloud.github.io/silver
+Live on GitHub Pages: https:// Sillverlord.github.io/silver
 
 - First song: **Confrontation — Anthony Warlow** (Artiman's favourite song)
 - Spotify: https://open.spotify.com/track/5oLWroGhJvHACXQ5nEx692
