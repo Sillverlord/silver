@@ -1,0 +1,78 @@
+:root {
+  --bg: #0b0b10;
+  --surface: #15151d;
+  --surface-2: #1d1d28;
+  --text: #f2f2f5;
+  --muted: #b9b9c6;
+  --silver: #c9c9d4;
+  --accent: #d8d8e6;
+  --line: #2a2a38;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: radial-gradient(900px 500px at 50% -10%, #2a2a3d 0%, var(--bg) 55%);
+  color: var(--text);
+  font-family: Tahoma, "Segoe UI", system-ui, -apple-system, sans-serif;
+  line-height: 1.9;
+}
+a { color: var(--accent); }
+.top {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 22px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.brand { font-size: 22px; font-weight: 800; letter-spacing: .5px; }
+nav { display: flex; gap: 18px; flex-wrap: wrap; }
+nav a { color: var(--muted); text-decoration: none; }
+nav a:hover { color: var(--text); }
+main { max-width: 960px; margin: 0 auto; padding: 20px; }
+.hero { text-align: center; padding: 64px 12px 48px; }
+.eyebrow { color: var(--muted); margin: 0 0 8px; }
+h1 {
+  margin: 0;
+  font-size: clamp(48px, 10vw, 88px);
+  line-height: 1.1;
+  background: linear-gradient(180deg, #fff, #b9b9c9 60%, #8f8fa3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.tagline { color: var(--muted); font-size: 19px; max-width: 560px; margin: 18px auto 0; }
+.actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 28px; }
+.btn {
+  display: inline-block;
+  padding: 11px 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+.btn.primary { background: #e8e8f2; color: #111; border-color: #e8e8f2; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 28px;
+  margin: 18px 0;
+}
+.card h2 { margin: 4px 0; font-size: 34px; }
+.artist { color: var(--muted); font-size: 19px; margin-top: 0; }
+.label { color: var(--silver); margin: 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.card.small { margin: 0; }
+.card.small h3 { margin-top: 0; }
+footer { text-align: center; color: var(--muted); padding: 36px 20px 48px; }
+.muted { font-size: 13px; }
+@media (max-width: 600px) {
+  .hero { padding-top: 36px; }
+  .card { padding: 22px; }
+}
