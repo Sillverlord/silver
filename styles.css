@@ -8,6 +8,7 @@
   --accent: #e8e8f2;
   --line: #2a2a38;
   --glow: #8f8fff;
+  --rose: #ff8fb3;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -31,7 +32,7 @@ body {
 }
 .orb-1 { width: 320px; height: 320px; background: #6f6fff; top: -80px; left: -80px; }
 .orb-2 { width: 260px; height: 260px; background: #c9c9d4; bottom: -60px; right: -60px; animation-delay: -6s; }
-.orb-3 { width: 180px; height: 180px; background: #ff8fb3; top: 45%; left: 70%; animation-delay: -12s; opacity: .22; }
+.orb-3 { width: 140px; height: 140px; background: #ff8fb3; top: 45%; left: 70%; animation-delay: -12s; opacity: .12; }
 @keyframes drift {
   from { transform: translate3d(0, 0, 0) scale(1); }
   to { transform: translate3d(40px, -30px, 0) scale(1.15); }
@@ -69,21 +70,9 @@ h1 {
 .btn:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 12px 30px rgba(140, 140, 255, .25); }
 .btn.primary { background: #e8e8f2; color: #111; border-color: #e8e8f2; }
 
-/* 3D vinyl / rings */
-.stage { perspective: 1000px; display: flex; justify-content: center; margin: 28px 0 8px; }
-.disc {
-  width: 190px; height: 190px; border-radius: 50%; position: relative;
-  background: radial-gradient(circle, #2a2a38 0 18%, #111 19% 32%, #c9c9d4 33% 34%, #1d1d28 35% 55%, #3a3a4a 56% 57%, #15151d 58% 100%);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, .6), 0 0 0 1px #2a2a38, 0 0 80px rgba(160, 160, 255, .25);
-  animation: spin 14s linear infinite;
-  transform-style: preserve-3d;
-}
-.disc::after {
-  content: "♪"; position: absolute; inset: 0; display: grid; place-items: center;
-  font-size: 44px; color: #e8e8f2; animation: spin-rev 14s linear infinite;
-}
-@keyframes spin { from { transform: rotateX(58deg) rotateZ(0); } to { transform: rotateX(58deg) rotateZ(360deg); } }
-@keyframes spin-rev { from { transform: rotateZ(0); } to { transform: rotateZ(-360deg); } }
+/* Three.js canvas */
+.stage { perspective: 1000px; display: flex; justify-content: center; margin: 8px 0; }
+#scene { width: 100%; height: 320px; display: block; }
 
 .card {
   background: var(--surface); border: 1px solid var(--line); border-radius: 20px;
@@ -117,7 +106,7 @@ footer { text-align: center; color: var(--muted); padding: 36px 20px 48px; }
 @media (max-width: 600px) {
   .hero { padding-top: 36px; }
   .card { padding: 22px; }
-  .disc { width: 150px; height: 150px; }
+  #scene { height: 240px; }
 }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
